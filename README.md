@@ -1,2 +1,2 @@
 # sdk_docs
-This repo contains source fils of JUMA SDK documents
+Build document site by [MkDocs](http://mkdocs.org/).
