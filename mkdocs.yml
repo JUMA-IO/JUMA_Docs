@@ -1,0 +1,27 @@
+site_name: UPYUN 文档中心
+site_url: http://www.juma.io/doc/zh/
+repo_url: https://github.com/JUMA-IO/SDK_Docs
+docs_dir: sources
+theme_dir: theme/updocs
+#theme: bootstrap
+copyright: Copyright &copy; 2015, UPYUN
+
+pages:
+
+- '文档首页': 'index.md'
+- '嵌入式SDK':
+    - 'test': 'embedded_api/test.md'
+- 'Android SDK':
+    - 'test': 'android_api/test.md'
+- 'iOS SDK':
+    - 'test': 'ios_api/test.md'
+- 'nRF51平台':
+    - 'test': 'nrf51_platform/test.md'
+- 'STM32平台':
+    - 'test': 'stm32_platform/test.md'
+
+
+# Add permalink for sharing
+markdown_extensions:
+    - toc:
+        permalink: True
