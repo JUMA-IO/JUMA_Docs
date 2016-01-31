@@ -1,16 +1,17 @@
-site_name: UPYUN 文档中心
+site_name: JUMA 文档中心
 site_url: http://www.juma.io/doc/zh/
-repo_url: https://github.com/JUMA-IO/SDK_Docs
+repo_url: https://github.com/JUMA-IO/JUMA_Docs
 docs_dir: sources
 theme_dir: theme/updocs
 #theme: bootstrap
-copyright: Copyright &copy; 2015, UPYUN
+copyright: Copyright &copy; 2015, JUMA
 
 pages:
 
 - '文档首页': 'index.md'
 - '嵌入式SDK':
-    - 'test': 'embedded_api/test.md'
+    - 'BLE从设备': 'embedded_api/ble.md'
+    - 'BLE主设备': 'embedded_api/ble_master.md'
 - 'Android SDK':
     - 'test': 'android_api/test.md'
 - 'iOS SDK':

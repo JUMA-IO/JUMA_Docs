@@ -11,11 +11,11 @@
                   <ul class="nav">
                   {% for toc_item in toc %}
                     <li class="{% if toc_item.active %}active {% endif %}"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-                    {% for toc_item in toc_item.children %}
+<!--                    {% for toc_item in toc_item.children %}
                       <ul class="nav nav-l2">
                         <li><a class="itm-l2" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
                       </ul>
-                    {% endfor %}
+                    {% endfor %}-->
                   {% endfor %}
                   </ul>
                 {% endif %}

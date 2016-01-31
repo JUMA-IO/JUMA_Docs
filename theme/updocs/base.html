@@ -8,7 +8,7 @@
         {% if site_author %}<meta name="author" content="{{ site_author }}">{% endif %}
         {% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
         {% if favicon %}<link rel="shortcut icon" href="{{ favicon }}">
-        {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
+        {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/jumafav.png">{% endif %}
 
         <title>{{ site_name }}</title>
 
@@ -16,6 +16,7 @@
         <link href="{{ base_url }}/css/font-awesome-4.0.3.css" rel="stylesheet">
         <link href="{{ base_url }}/css/prettify.css" rel="stylesheet">
         <link href="{{ base_url }}/css/main.css" rel="stylesheet">
+        <!--<link href="{{ base_url }}/css/table.css" rel="stylesheet">        -->
         {%- for path in extra_css %}
         <link href="{{ path }}" rel="stylesheet">
         {%- endfor %}
