@@ -5,8 +5,8 @@ JUMA 的文档中心基于 [MkDocs](http://mkdocs.org/) 制作。所有文档的
 所有生成的文档页面全部托管于 [www.juma.io/doc/](www.juma.io/doc/)，并与本项目仓库保持实时同步。
 
 
-## 帮助完善 UPYUN 的文档
-如果想要帮助 UPYUN 完善文档，请查看：[CONTRIBUTING.md](CONTRIBUTING.md)。
+## 帮助完善 JUMA 的文档
+如果想要帮助 JUMA 完善文档，请查看：[CONTRIBUTING.md](CONTRIBUTING.md)。
 
 
 ## 本地运行
