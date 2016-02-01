@@ -12,6 +12,9 @@ pages:
 - '嵌入式SDK':
     - 'BLE从设备': 'embedded_api/ble.md'
     - 'BLE主设备': 'embedded_api/ble_master.md'
+    - 'JSensor传感器': 'embedded_api/jsensor.md'
+    - '定时器': 'embedded_api/timer.md'
+    - '任务调度': 'embedded_api/time_task.md'
 - 'Android SDK':
     - 'test': 'android_api/test.md'
 - 'iOS SDK':
