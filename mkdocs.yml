@@ -20,6 +20,11 @@ pages:
     - '定时器': 'embedded_api/timer.md'
     - '看门狗': 'embedded_api/wdog.md'
     - '非易失性存储': 'embedded_api/storage.md'
+    - 'USB': 'embedded_api/usb.md'
+    - '调光灯': 'embedded_api/light.md'
+    - '蜂蜜器': 'embedded_api/buzz.md'
+    - '红外发射': 'embedded_api/infrared.md'
+    - '模数转换': 'embedded_api/adc.md'
     - '图形库': 'embedded_api/gfx.md'
 - 'Android SDK':
     - 'test': 'android_api/test.md'
