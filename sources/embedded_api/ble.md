@@ -4,8 +4,8 @@
 
 API声明和数据结构说明见头文件：
 
-* nRF51平台：[`juma_sdk_api.h`](https://github.com/JUMA-IO/nRF51_Platform/blob/master/Interface/Include/juma_sdk_api.h)
-* STM32平台：[`bluenrg_sdk_api.h`](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/juma/inc/bluenrg_sdk_api.h)
+* nRF51平台：[juma_sdk_api.h](https://github.com/JUMA-IO/nRF51_Platform/blob/master/Interface/Include/juma_sdk_api.h)
+* STM32平台：[bluenrg_sdk_api.h](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/juma/inc/bluenrg_sdk_api.h)
 
 > 如无特殊说明，本系列API同时兼容nRF51平台和STM32平台。
 
@@ -21,29 +21,9 @@ BLE_STATUS_FAILED | 0x41    | API调用失败
 BLE_STATUS_BUSY | 0x43    | API状态繁忙
 BLE_STATUS_TIMEOUT | 0xFF    | API调用超时
 
-> 1. 其他宏定义请参阅[`ble_status.h`](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/drivers/bluenrg/inc/ble_status.h)。  
+> 1. 其他宏定义请参阅：[ble_status.h](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/drivers/bluenrg/inc/ble_status.h)。  
 > 2. 本宏定义只适用于STM32平台。
 
-
-
-***
-## 初始化
-###1. 函数声明
-
-```
-tBleStatus ble_init_bluenrg(void);
-```
-> 本API只适用于STM32平台。
-
-###2. 函数功能
-初始化GATT和GAP，添加特定Service。
-> 本API应在广播参数设置完成后调用。  
-
-###3. 函数参数
-
-参数    | 数据类型   | 说明
-:----- | :-------- | :------
-*返回值*  | ret    | [status](#_1)
 
 
 
@@ -66,6 +46,7 @@ tBleStatus ble_device_set_tx_power(uint8_t level)；
 
 ###2. 函数功能
 设置BLE设备的发射功率或者发射等级。
+> 请在`ble_device_start_advertising()`之前调用。  
 
 ###3. 函数参数
 **nRF51平台**
@@ -80,7 +61,7 @@ tBleStatus ble_device_set_tx_power(uint8_t level)；
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
 *level*|uint8_t|数值范围为0~7，对应8个等级的发射功率。缺省值为7，表示设置为最大发射功率(8dBm)。
-*返回值*  | ret    | [status](#_1)
+*返回值*  | tBleStatus    | [status](#_1)
 
 
 ***
@@ -93,7 +74,7 @@ void ble_device_set_name(const char* device_name);
 
 ###2. 函数功能
 设置当前BLE设备的广播名称。  
-> STM32平台，请在`ble_init_bluenrg()`之前调用。  
+> 请在`ble_device_start_advertising()`之前调用。  
 
 
 ###3. 函数参数
@@ -112,7 +93,7 @@ void ble_device_set_advertising_interval(uint16_t interval);
 
 ###2. 函数功能
 设置BLE的广播间隔。 
-> STM32平台，请在`ble_init_bluenrg()`之前调用。  
+> 请在`ble_device_start_advertising()`之前调用。  
 
 ###3. 函数参数
 参数    | 数据类型   | 说明
@@ -139,7 +120,7 @@ tBleStatus ble_address(uint8_t* advaddress);
 
 ###2. 函数功能
 设置BLE设备的广播地址。
-> STM32平台，请在`ble_init_bluenrg()`之前调用。  
+> 请在`ble_device_start_advertising()`之前调用。  
 
 
 ###3. 函数参数
@@ -155,7 +136,7 @@ tBleStatus ble_address(uint8_t* advaddress);
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
 *advaddress*|uint8_t * |广播地址数组，长度为6个字节
-*返回值*  | ret   | 设置是否成功
+*返回值*  | tBleStatus   | 设置是否成功
 
 ***
 ## 开始广播
@@ -188,7 +169,7 @@ BLE设备开始广播。
 
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-*返回值*  | ret    | [status](#_1)
+*返回值*  | tBleStatus    | [status](#_1)
 
 ***
 ## 停止广播
@@ -221,7 +202,7 @@ BLE设备停止广播。
 
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-*返回值*  | ret    | [status](#_1)
+*返回值*  | tBleStatus    | [status](#_1)
 
 
 ***

@@ -8,8 +8,16 @@ copyright: Copyright &copy; 2015, JUMA
 
 pages:
 
-- '文档首页': 'index.md'
+- '文档中心': 
+    - '文档首页': 'basics/index.md'
+    - 'SDK概述': 'basics/intro.md'
+    - '技术支持': 'basics/support.md'
+    - '关于我们': 'basics/aboutus.md'
+    - '法律条款': 'basics/legal.md'
+    - '技术话题: BLE入门教程': 'basics/ble_first.md'
+    - '技术话题: IoT嵌入式编程': 'basics/embedded_iot.md'
 - '嵌入式SDK':
+    - '使用说明': 'embedded_api/guide.md'
     - '系统和任务': 'embedded_api/task.md'
     - 'BLE从设备': 'embedded_api/ble.md'
     - 'BLE主设备': 'embedded_api/ble_master.md'

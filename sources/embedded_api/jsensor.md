@@ -5,7 +5,6 @@ JSensor是JUMA为整合传感器开发的一系列简明API，目前，它支持
 void jsensor_app_setSensors(void);
 void jsensor_app_setSensor(uint16_t sid);
 JSensor_Status jsensor_app_read_sensor(uint16_t sid, void *data);
-
 ```
 
 其中，jsensor_app_setSensors是传感器设置/初始化入口，jsensor_app_setSensor是设置/初始化某一传感器，jsensor_app_read_sensor是读取传感器数据。传感器通过*sid*编号来指定。
