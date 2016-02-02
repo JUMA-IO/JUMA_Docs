@@ -10,11 +10,17 @@ pages:
 
 - '文档首页': 'index.md'
 - '嵌入式SDK':
+    - '系统和任务': 'embedded_api/task.md'
     - 'BLE从设备': 'embedded_api/ble.md'
     - 'BLE主设备': 'embedded_api/ble_master.md'
-    - 'JSensor传感器': 'embedded_api/jsensor.md'
+    - 'JSensor': 'embedded_api/jsensor.md'
+    - 'GPIO': 'embedded_api/gpio.md'
+    - 'SPI总线': 'embedded_api/spi.md'
+    - '串口总线': 'embedded_api/serial.md'
     - '定时器': 'embedded_api/timer.md'
-    - '任务调度': 'embedded_api/time_task.md'
+    - '看门狗': 'embedded_api/wdog.md'
+    - '非易失性存储': 'embedded_api/storage.md'
+    - '图形库': 'embedded_api/gfx.md'
 - 'Android SDK':
     - 'test': 'android_api/test.md'
 - 'iOS SDK':
