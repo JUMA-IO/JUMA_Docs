@@ -1,10 +1,10 @@
 ##nRF51平台进阶流程
 
 ###1. 搭建开发环境
-搭建[开发环境](./dev_env.html)，安装和配置相关的软件。
+搭建[开发环境](./dev_env/)，安装和配置相关的软件。
 
 ###2. 了解开发板硬件资源
-基于Nordic nRF51822，我们提供了[NOVA](./nova_resource.html)、[SMP](./smp_resource.html)两款开发板。您可以查看开发板说明，了解它能够做些什么。  
+基于Nordic nRF51822，我们提供了[NOVA](./nova_resource/)、[SMP](./smp_resource/)两款开发板。您可以查看开发板说明，了解它能够做些什么。  
 
 > JUMA SDK可以运行在任何基于Nordic nRF51822的硬件上。  
 
