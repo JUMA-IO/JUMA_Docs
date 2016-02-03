@@ -126,15 +126,15 @@
 </div>
                         
 <div id="overview">
+
 <div class="first">
-        <a class="wrap yellow index-native" href="../stm32_platform/guide/">
-            <div class="title">STM32平台</div>
-        </a>
-</div>
-<div class="first">
-        <a class="wrap gold index-native" href="../nrf51_platform/guide/">
+        <a class="wrap yellow index-native" href="../nrf51_platform/guide/">
             <div class="title">nRF51平台</div>
         </a>
 </div>
-
+<div class="first">
+        <a class="wrap gold index-native" href="../stm32_platform/guide/">
+            <div class="title">STM32平台</div>
+        </a>
+</div>
 </div>

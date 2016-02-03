@@ -43,7 +43,14 @@ pages:
     - '管理类': 'ios_api/manager.md'
     - '设备类': 'ios_api/device.md'
 - 'nRF51平台':
-    - 'test': 'nrf51_platform/test.md'
+    - '使用说明': 'nrf51_platform/guide.md'
+    - '环境搭建': 'nrf51_platform/dev_env.md'
+    - 'NOVA的介绍': 'nrf51_platform/nova_resource.md'
+    - 'NOVA的烧录': 'nrf51_platform/nova_burn.md'
+    - 'NOVA的例程: 回声': 'nrf51_platform/nova_lesson.md'
+    - 'SMP的介绍': 'nrf51_platform/smp_resource.md'
+    - 'SMP的烧录': 'nrf51_platform/smp_burn.md'
+    - 'SMP的例程: 三轴加速度计': 'nrf51_platform/smp_lesson.md'
 - 'STM32平台':
     - 'test': 'stm32_platform/test.md'
 
