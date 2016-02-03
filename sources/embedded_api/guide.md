@@ -30,6 +30,21 @@ SDK支持nRF51平台和STM32平台：
 * nRF51平台不支持上述STM32平台特有的API，其他的API都予以支持；
 
 
+***
+## 移动端工具
+为了方便调试嵌入式代码，JUMA制作了移动端的BLE调试助手，该APP可以和设备之间发送或接收原始蓝牙数据。现在您可以从iOS或者Android应用宝APP市场直接下载，或者自行编译源码。
+
+####1. APP下载安装：
+* iOS版本: [BLE调试助手_AppStore](https://itunes.apple.com/cn/app/juma-ble-diao-shi-zhu-shou/id1027737596?l=en&mt=8)
+* Android版本: [BLE调试助手_应用宝](http://sj.qq.com/myapp/detail.htm?apkName=com.juma.helper)
+
+####2. 源码编译安装：
+* iOS版本: [BLE调试助手_iOS_Github](https://github.com/JUMA-IO/BLE_Debugger_iOS)
+* Android版本: [BLE调试助手_Android_Github](https://github.com/JUMA-IO/BLE_Debugger_Android)
+
+
+
+
 
 
 

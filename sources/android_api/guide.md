@@ -1,3 +1,7 @@
+本文介绍JUMA的Android SDK的环境搭建及其使用。
+
+Android SDK配合嵌入式SDK共同实现设备-手机的蓝牙通信功能。相对于Android原生BLE SDK，它能确保更为稳定的蓝牙联通操作，而且使用起来更为简单，开发者不再需要了解BLE特有的如service、characteristic、notification等概念。此外，该SDK还增加了例如设备端固件空中升级(OTA)的功能。
+
 ## Android环境搭建
 ###1. 使用Eclipse创建Android工程
 Step 1. 点击 File -> New -> Android Application Project.

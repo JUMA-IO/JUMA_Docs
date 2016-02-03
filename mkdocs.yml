@@ -39,7 +39,9 @@ pages:
     - '扫描类': 'android_api/scan.md'
     - '设备类': 'android_api/device.md'
 - 'iOS SDK':
-    - 'test': 'ios_api/test.md'
+    - '使用说明': 'ios_api/guide.md'
+    - '管理类': 'ios_api/manager.md'
+    - '设备类': 'ios_api/device.md'
 - 'nRF51平台':
     - 'test': 'nrf51_platform/test.md'
 - 'STM32平台':
