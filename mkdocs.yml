@@ -35,7 +35,9 @@ pages:
     - '模数转换': 'embedded_api/adc.md'
     - '图形库': 'embedded_api/gfx.md'
 - 'Android SDK':
-    - 'test': 'android_api/test.md'
+    - '使用说明': 'android_api/guide.md'
+    - '扫描类': 'android_api/scan.md'
+    - '设备类': 'android_api/device.md'
 - 'iOS SDK':
     - 'test': 'ios_api/test.md'
 - 'nRF51平台':

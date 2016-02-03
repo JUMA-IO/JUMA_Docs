@@ -109,17 +109,17 @@
 
 <div id="overview">
 <div class="first">
-        <a class="wrap blue1 index-doc" href="/APICloud/creating-first-app">
+        <a class="wrap blue1 index-doc" href="../embedded_api/guide/">
             <div class="title">嵌入式SDK</div>
         </a>
 </div>
 <div class="first">
-        <a class="wrap purple2 index-doc" href="/APICloud/creating-first-app">
+        <a class="wrap purple2 index-doc" href="../android_api/guide/">
             <div class="title">Android SDK</div>
         </a>
 </div>
 <div class="first">
-        <a class="wrap green index-doc" href="/APICloud/creating-first-app">
+        <a class="wrap green index-doc" href="../ios_api/guide/">
             <div class="title">iOS SDK</div>
         </a>
 </div>
@@ -127,12 +127,12 @@
                         
 <div id="overview">
 <div class="first">
-        <a class="wrap yellow index-native" href="/APICloud/creating-first-app">
+        <a class="wrap yellow index-native" href="../stm32_platform/guide/">
             <div class="title">STM32平台</div>
         </a>
 </div>
 <div class="first">
-        <a class="wrap gold index-native" href="/APICloud/creating-first-app">
+        <a class="wrap gold index-native" href="../nrf51_platform/guide/">
             <div class="title">nRF51平台</div>
         </a>
 </div>
