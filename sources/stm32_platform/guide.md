@@ -4,7 +4,7 @@
 搭建[开发环境](./dev_env/)，安装和配置相关软件。
 
 ###2. 了解开发板硬件资源
-基于STM32和BlueNRG蓝牙芯片，我们提供了[Cannon](../cannon_resource/)开发板。您可以查看开发板介绍，了解它能够做些什么。  
+基于STM32和BlueNRG蓝牙芯片，我们提供了[Cannon](./cannon_resource/)开发板。您可以查看开发板介绍，了解它能够做些什么。  
 JUMA SDK可以运行在任何基于STM32和BlueNRG的硬件上。  
 
 ###3. 掌握开发板烧入方式
