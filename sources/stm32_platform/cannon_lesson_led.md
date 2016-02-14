@@ -91,4 +91,4 @@ x:/Cannon/product/application/remote_control/app.c
 
 代码量很少，已配有注释，非常方便阅读。  
 如果您对其中的BLE APIs和调度APIs有所疑问，请查阅相应的API说明：  
-[http://www.juma.io/doc/zh/embedded_sdk.html](http://www.juma.io/doc/zh/embedded_sdk.html)
+[http://www.juma.io/doc/zh/embedded_api/guide/](http://www.juma.io/doc/zh/embedded_api/guide/)
