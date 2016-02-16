@@ -91,13 +91,13 @@ iOS 系统提供了几种允许 app 在后台运行的模式, 蓝牙形式的后
 ***
 ## 开源代码和例程
 
-SDK现在已经全部开源，您可以从以下地址获取： 
+Juma iOS SDK 现在已经全部开源，您可以从以下地址获取： 
 
-* SDK代码仓库：[https://github.com/JUMA-IO/BLE_SDK_iOS](https://github.com/JUMA-IO/BLE_SDK_iOS)
+* SDK 代码仓库：[https://github.com/JUMA-IO/BLE_SDK_iOS](https://github.com/JUMA-IO/BLE_SDK_iOS)
 
-此外，我们还提供了一些使用SDK的例程，包括：
+此外，我们还提供了一些使用 SDK 的例程，包括：
 
-* BLE调试助手：[https://github.com/JUMA-IO/BLE_Debugger_iOS](https://github.com/JUMA-IO/BLE_Debugger_iOS)
+* BLE 调试助手：[https://github.com/JUMA-IO/BLE_Debugger_iOS](https://github.com/JUMA-IO/BLE_Debugger_iOS)
 
 
 
