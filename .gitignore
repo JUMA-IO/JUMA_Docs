@@ -63,3 +63,9 @@ target/
 sftp-config.json
 
 site/*
+
+
+# OS X
+.DS_Store
+
+
