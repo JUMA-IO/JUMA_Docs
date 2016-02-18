@@ -41,9 +41,11 @@ Step 1. 将juma-sdk.jar放入到工程的libs文件夹中
 ![](./images/7.png)
 
 Step 2. 打开AndroidManifest.xml文件
-Step 3. 在AndroidManifest.xml加入以下两条权限：
+
+Step 3. 在AndroidManifest.xml加入以下三条权限：
 
 ```
+	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.BLUETOOTH"/>
 	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 ```
@@ -58,7 +60,7 @@ SDK分成了三个类，需要在工程中分别对其实例化。
 
 ###1. ScanHelper 
 该类用于扫描BLE设备，如开始扫描、停止扫描等BLE操作。  
-其中ScanCallback是一个接口，用于获取BLE设备扫描的结果，它以Callback的形式通知应用程序：
+其中ScanCallback是一个接口类，用于获取BLE设备扫描的结果，它以Callback的形式通知应用程序：
 
 ```
 	ScanHelper scanHelper = new ScanHelper(getApplicationContext(), scanCallback);
@@ -120,6 +122,8 @@ SDK分成了三个类，需要在工程中分别对其实例化。
 		device.send(type, message);
 
 		device.getRemoteRssi();
+
+		device.setOtaMode();
 
 		device.updateFirmware(url);
 
