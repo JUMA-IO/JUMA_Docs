@@ -26,7 +26,7 @@ SDK支持nRF51平台和STM32平台：
 
 目前，在兼容性问题上，SDK的API尚未兼容nRF51和STM32两个平台，说明如下：
 
-* `JSENSOR API`、`BLE主设备 API`、`USB API`是STM32平台特有的API；
+* `JSENSOR API`、`BLE主设备 API`、`IMU sensor API`、`USB API`是STM32平台特有的API；
 * nRF51平台不支持上述STM32平台特有的API，其他的API都予以支持；
 
 
