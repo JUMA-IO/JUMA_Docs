@@ -4,7 +4,7 @@
 
 API声明和数据结构说明见头文件：
 
-* STM32平台：[bluenrg_sdk_api.h](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/juma/inc/bluenrg_sdk_api.h)
+* STM32平台：[bluenrg_sdk_host_api.h](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/juma/inc/bluenrg_sdk_host_api.h)
 
 蓝牙主设备的API使用例程请参见：[host](https://github.com/JUMA-IO/STM32_Platform/blob/master/product/application/host/app.c)。
 
@@ -44,7 +44,7 @@ void ble_host_set_scan_param(uint8_t* own_address, uint8_t tx_power_level, uint1
 :----- | :-------- | :------
 *own_address*| uint8_t * |主设备自己的蓝牙地址
 *tx_power_level*| uint8_t|主设备的发射功率等级，取值范围为[0~7]
-*scan_interval*| uint8_t|主设备的扫描间隔，单位毫秒(ms)
+*scan_interval*| uint8_t|主设备的扫描间隔，单位毫秒(ms),实际扫描间隔值interval*0.625ms
 *返回值*  | 无    | 无
 
 
@@ -103,13 +103,13 @@ void ble_host_on_device_info(scan_device_found_info device_info)
 
 ```
 typedef struct scan_device_found {
-    uint8_t		bdaddr_type;  	//设备地址类型
+    uint8_t		 bdaddr_type;  	//设备地址类型
     tBDAddr	 	bdaddr;       	//设备地址
-    uint8_t		local_name_len;  //设备名称长度
-    uint8_t  	local_name[VARIABLE_SIZE]; //设备名称
-    uint8_t		uuid_type; 		//UUID类型
-    uint8_t  	uuid[VARIABLE_SIZE]; //UUID
-    int8_t 		RSSI; 			//信号强度
+    uint8_t		 local_name_len;  //设备名称长度
+    uint8_t  	   local_name[VARIABLE_SIZE]; //设备名称
+    uint8_t		 uuid_type; 		//UUID类型
+    uint8_t  	   uuid[VARIABLE_SIZE]; //UUID
+    int8_t 		 RSSI; 			//信号强度
 } scan_device_found_info;
 ```
 
@@ -178,7 +178,7 @@ tBleStatus ble_host_send(uint8_t type, uint32_t length, uint8_t* value);
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
 *type*| uint8_t * |数据类型
-*length*| uint32_t |数据长度
+*length*| uint32_t |数据长度(目前支持单个数据包最长18Byte)
 *value*| uint8_t * |数据内容
 *返回值*  | tBleStatus    | [status](#_1)
 

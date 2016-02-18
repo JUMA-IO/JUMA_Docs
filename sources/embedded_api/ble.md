@@ -40,7 +40,7 @@ void ble_device_set_tx_power(int8_t tx_power);
 **STM32平台**
 
 ```
-tBleStatus ble_device_set_tx_power(uint8_t level)；
+tBleStatus ble_set_tx_power(uint8_t level)；
 ```
 
 
@@ -60,7 +60,7 @@ tBleStatus ble_device_set_tx_power(uint8_t level)；
 
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-*level*|uint8_t|数值范围为0~7，对应8个等级的发射功率。缺省值为7，表示设置为最大发射功率(8dBm)。
+*level*|uint8_t|数值范围为0~7，对应8个等级的发射功率: -15, -11.7, -8.4, -5.1, -2.1, 1.4, 4.7, 8.0。<br/>缺省值为7，表示设置为最大发射功率(8dBm)。
 *返回值*  | tBleStatus    | [status](#_1)
 
 
@@ -68,7 +68,7 @@ tBleStatus ble_device_set_tx_power(uint8_t level)；
 ## 设置广播名称
 ###1. 函数声明
 ```
-void ble_device_set_name(const char* device_name);
+void ble_device_set_name(const char* new_device_name);
 ```
 
 
@@ -98,7 +98,7 @@ void ble_device_set_advertising_interval(uint16_t interval);
 ###3. 函数参数
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-*interval*|uint16_t |广播包的发送间隔，单位为ms。
+*interval*|uint16_t |广播包的发送间隔，单位为ms,广播间隔实际值为interval乘0.625ms间隔<br/>最小广播间隔大于 32*0.625ms。
 *返回值*  | 无    | 无
 
 
@@ -293,7 +293,7 @@ tBleStatus ble_user_disconnect_device(void);
 
 
 ###2. 函数功能
-断开与之连接的BLE设备。
+device端断开与之连接的host端设备。
 
 
 ###3. 函数参数
@@ -348,7 +348,7 @@ void ble_device_send(uint8_t type, uint32_t length, uint8_t* value);
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
 *type*   | uint8_t | 数据类型，数值范围（0x00~0x7F）
-*length* | uint32_t | 数据长度
+*length* | uint32_t | 数据长度（stm32平台单次数据长度不超过18Byte）
 *value*  | uint8_t * | 数据内容
 *返回值*  | void     | 无
 
