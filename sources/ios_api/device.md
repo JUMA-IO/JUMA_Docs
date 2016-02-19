@@ -1,6 +1,6 @@
 SDK 中将对 iOS BLE 设备的操作封装成设备类(Device)，包括发送数据、接收数据、固件升级等操作。
 
-SDK为开源项目，本文涉及的代码参见：
+SDK 为开源项目，本文涉及的代码参见：
 
 * `BLE_SDK_iOS`：[github](https://github.com/JUMA-IO/BLE_SDK_iOS)
 
@@ -25,10 +25,10 @@ SDK为开源项目，本文涉及的代码参见：
 *返回值*      | void                | 无
 
 ####关于 *data* 参数
-*data* 不能为 nil，data 的长度必须小于 199。
+*data* 不能为 nil，data 的长度必须小于 199.
 
 ####关于 *typeCode* 参数
-*typeCode* 必须小于 128
+*typeCode* 必须小于 128.
 
 
 ***
@@ -83,10 +83,10 @@ SDK为开源项目，本文涉及的代码参见：
 *返回值*       | void         | 无
 
 ####关于 *data* 参数 
-如果接收数据时发生错误，*data* 为 nil。
+如果接收数据时发生错误，*data* 为 nil.
 
 ####关于 *typeCode* 参数 
-如果接收数据时发生错误，*typeCode* 为 -1。
+如果接收数据时发生错误，*typeCode* 为 -1.
 
 ###4. 函数举例
 ```
@@ -185,8 +185,8 @@ typedef void (^JumaUpdateFirmwareBlock)(NSError *error);
 ###2. 函数功能
 更新蓝牙设备的固件.  
 
-调用 updateFirmware: 进行更新操作时, 结果会通过 JumaDeviceDelegate 中的 device:didUpdateFirmware: 给出  
-调用 updateFirmware:completionHandler: 进行更新操作时, 如果 handler 参数不为 nil, 结果会通过 handler 给出, 否则会通过 JumaDeviceDelegate 中的 device:didUpdateFirmware: 给出
+调用 updateFirmware: 进行更新操作时, 结果会通过 JumaDeviceDelegate 中的 device:didUpdateFirmware: 给出.  
+调用 updateFirmware:completionHandler: 进行更新操作时, 如果 handler 参数不为 nil, 结果会通过 handler 给出, 否则会通过 JumaDeviceDelegate 中的 device:didUpdateFirmware: 给出.
 
 
 ###3. 函数参数
@@ -199,7 +199,7 @@ typedef void (^JumaUpdateFirmwareBlock)(NSError *error);
 
 ***
 ####关于 *firmwareData* 参数
-*firmwareData* 不能为 nil
+*firmwareData* 不能为 nil.
 
 
 ***
@@ -223,7 +223,7 @@ typedef void (^JumaUpdateFirmwareBlock)(NSError *error);
 
 
 ####关于 *error* 参数 
-error 为 nil 说明升级成功，否则升级失败
+error 为 nil 说明升级成功，否则升级失败.
 
 ###4. 函数举例
 ```
