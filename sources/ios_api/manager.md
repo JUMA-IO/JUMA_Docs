@@ -1,6 +1,6 @@
 SDK 中将对 iOS BLE 的操作封装成管理类(Manager)，包括扫描、建立连接、断开连接等操作。
 
-SDK为开源项目，本文涉及的代码参见：
+SDK 为开源项目，本文涉及的代码参见：
 
 * `BLE_SDK_iOS`：[github](https://github.com/JUMA-IO/BLE_SDK_iOS)
 
@@ -9,7 +9,7 @@ SDK为开源项目，本文涉及的代码参见：
 ##数据结构
 ###常量: JumaManagerOptionRestoreIdentifierKey  
 ```
-extern NSString * const JumaManagerOptionRestoreIdentifierKey NS_AVAILABLE(NA, 7_0);
+FOUNDATION_EXPORT NSString * const JumaManagerOptionRestoreIdentifierKey NS_AVAILABLE(NA, 7_0);
 ```
 
 在初始化 JumaManager 时的可选参数之一, 该参数对应的值的类型是 NSString *.  
@@ -31,7 +31,7 @@ extern NSString * const JumaManagerOptionRestoreIdentifierKey NS_AVAILABLE(NA, 7
 ###常量: JumaManagerOptionShowPowerAlertKey  
 
 ```
-extern NSString * const JumaManagerOptionShowPowerAlertKey NS_AVAILABLE(NA, 7_0);
+FOUNDATION_EXPORT NSString * const JumaManagerOptionShowPowerAlertKey NS_AVAILABLE(NA, 7_0);
 ```
 
 在初始化 JumaManager 时的可选参数之一, 该参数对应的值的类型是 NSNumber * (Boolean).  
@@ -39,7 +39,7 @@ extern NSString * const JumaManagerOptionShowPowerAlertKey NS_AVAILABLE(NA, 7_0)
 
 ###常量: JumaManagerScanOptionAllowDuplicatesKey  
 ```
-extern NSString * const JumaManagerScanOptionAllowDuplicatesKey;  
+FOUNDATION_EXPORT NSString * const JumaManagerScanOptionAllowDuplicatesKey;  
 ```
 
 该参数是启动扫描时的可选参数, 该参数对应的值的类型是 NSNumber * (Boolean).  
@@ -64,7 +64,7 @@ extern NSString * const JumaManagerScanOptionAllowDuplicatesKey;
 ###3. 函数参数
 参数          | 类型                           | 说明
 :-----       | :--------                      | :------ 
-*delegate*   | id\<JumaManagerDelegate>       | 接收 JumaManager 的事件的对象 
+*delegate*   | id<JumaManagerDelegate>        | 接收 JumaManager 的事件的对象 
 *queue*      | dispatch_queue_t               | JumaManager 的事件将被发送到这个 queue 上
 *options*    | NSDictionary *                 | 初始化 JumaManager 对象的时候的可选参数
 *返回值*      | instancetype                   | 由这个方法生成的 JumaManager 类型的对象实例
@@ -82,7 +82,7 @@ extern NSString * const JumaManagerScanOptionAllowDuplicatesKey;
 ```
 NSDictionary *options = @{ JumaManagerOptionShowPowerAlertKey    : @YES,
                            JumaManagerOptionRestoreIdentifierKey : @"io.juma.restoreID" };
-JumaManager *manager = [[JumaManager alloc] initWithDelegate:self queue:nil options:options];
+self.manager = [[JumaManager alloc] initWithDelegate:self queue:nil options:options];
 ```
 
 
@@ -103,12 +103,12 @@ JumaManager *manager = [[JumaManager alloc] initWithDelegate:self queue:nil opti
 *返回值*        | void             | 无
 
 ####关于 *options* 参数
-可选参数，见 [JumaManagerScanOptionAllowDuplicatesKey](./JumaManagerScanOptionAllowDuplicatesKey.html)。
+可选参数，见 `JumaManagerScanOptionAllowDuplicatesKey`.
 
 ###4. 函数举例
 ```
 NSDictionary *options = @{ JumaManagerScanOptionAllowDuplicatesKey : @NO };
-[[JumaManager new] scanForDeviceWithOptions:options];
+[self.manager scanForDeviceWithOptions:options];
 ```
 
 
@@ -268,7 +268,7 @@ NSDictionary *options = @{ JumaManagerScanOptionAllowDuplicatesKey : @NO };
 *返回值*           | void         | 无
 
 
-####关于 *NSError* 参数 
+####关于 *error* 参数 
 如果连接断开是由调用 disconnectDevice: 导致的, *error* 为 nil.
 
 
