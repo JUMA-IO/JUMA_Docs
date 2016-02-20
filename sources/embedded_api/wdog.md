@@ -52,7 +52,7 @@ uint32_t watchDog_Start(uint32_t juma_wdt_timer_out_value);
 
 ###2. 函数功能
 让看门狗开始工作。  
-如果需要停止开门狗，则将相应的看门狗使能位清除。
+
 
 ###3. 函数参数
 参数    | 数据类型   | 说明
