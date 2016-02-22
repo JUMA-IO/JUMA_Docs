@@ -55,6 +55,7 @@ imu_status_t imu_sensor_select_features(sensor_selsection_t features);
 ###3. 函数参数
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
+features| sensor_selsection_t |可选择ACC_ENABLE/GYRO_ENABLE/MAG_ENABLE/ACC_AND_GYRO_ENABLE<br/>/ALL_ENABLE。
 *返回值*  | imu_status_t    | [status](#_1)
 
 
@@ -86,7 +87,7 @@ imu_status_t imu_sensor_start(void);
 ```
 
 ###2. 函数功能
-配置sensor的特定功能进行数据输出使能。
+根据配置sensor的特定功能进行数据输出使能。
 
 ###3. 函数参数
 参数    | 数据类型   | 说明
