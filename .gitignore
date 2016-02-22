@@ -68,4 +68,6 @@ site/*
 # OS X
 .DS_Store
 
+# temp file made by vim
+*.swp
 

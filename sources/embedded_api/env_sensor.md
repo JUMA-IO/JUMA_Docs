@@ -1,9 +1,8 @@
 本系列API用于支持获取环境传感器的数值（温湿度计HTS221，气压计LPS25HB）。
 应用于一些需要环境数据的场合，例如：智能家居系统，智慧农场，户外运动设备等。
 
-API声明和数据结构说明见头文件：
-* STM32平台：[env_sensor.h]( https://github.com/JUMA-IO/STM32_Platform/blob/master/system/juma/inc/env_sensor.h)
-
+API声明和数据结构说明见头文件：  
+STM32平台的 [env_sensor.h]( https://github.com/JUMA-IO/STM32_Platform/blob/master/system/juma/inc/env_sensor.h)
 
 > 本系列API仅支持STM32平台。
 
@@ -25,7 +24,7 @@ env_status_error | 0x01    | API调用失败
 
 
 ***
-## 选择sensor的功能进行使能
+## 使能传感器功能
 ###1. 函数声明
 ```
 env_status_t env_sensor_select_features(env_sensor_selsection_t features);
@@ -37,20 +36,20 @@ env_status_t env_sensor_select_features(env_sensor_selsection_t features);
 ###3. 函数参数
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-features| env_sensor_selsection_t |可选择TEMP_HUMI_ENABLE/AIR_PRESSURE_ENABLE<br/>/ALL_ENABLE。
+features| env_sensor_selsection_t |可选择`TEMP_HUMI_ENABLE`/`AIR_PRESSURE_ENABLE`<br/>/`ALL_ENABLE`。
 *返回值*  | env_status_t    | [status](#_1)
 
 
 
 ***
-## 初始化sensor开始产生数据
+## 传感器开始工作
 ###1. 函数声明
 ```
 env_status_t env_sensor_start(void); 
 ```
 
 ###2. 函数功能
-根据配置sensor的特定功能进行初始化与数据输出使能。
+根据功能配置让传感器开始工作。
 
 ###3. 函数参数
 参数    | 数据类型   | 说明
@@ -60,7 +59,7 @@ env_status_t env_sensor_start(void);
 
 
 ***
-## 获取环境温度数据
+## 获取温度数据
 ###1. 函数声明
 ```
 env_status_t env_sensor_get_temperature(float* temperature); 
@@ -72,13 +71,13 @@ env_status_t env_sensor_get_temperature(float* temperature);
 ###3. 函数参数
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-temperature| float* |单位为摄氏度，eg：26.66℃，温度范围-40-120℃。
+temperature| float* |单位为摄氏度，eg：26.66°C，温度范围-40-120°C。
 *返回值*  | env_status_t    | [status](#_1)
 
 
 
 ***
-## 获取环境湿度数据
+## 获取湿度数据
 ###1. 函数声明
 ```
 env_status_t env_sensor_get_humidity(float* humidity);
@@ -96,7 +95,7 @@ humidity| float* |单位为相对湿度rH，eg：26.66%rH，湿度范围0-100%rH
 
 
 ***
-## 同时获取环境温度与湿度数据
+## 同时获取温度与湿度数据
 ###1. 函数声明
 ```
 env_status_t env_sensor_get_temperature_humidity(float* temperature, float* humidity);
@@ -108,14 +107,14 @@ env_status_t env_sensor_get_temperature_humidity(float* temperature, float* humi
 ###3. 函数参数
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
-temperature| float* |单位为摄氏度，eg：26.66℃，温度范围-40-120℃。
+temperature| float* |单位为摄氏度，eg：26.66°C，温度范围-40-120°C。
 humidity| float* |单位为相对湿度rH，eg：26.66%rH，湿度范围0-100%rH。
 *返回值*  | env_status_t    | [status](#_1)
 
 
 
 ***
-## 获取环境大气压数据
+## 获取大气压数据
 ###1. 函数声明
 ```
 env_status_t env_sensor_get_air_pressure(float* air_pressure);
@@ -130,6 +129,3 @@ env_status_t env_sensor_get_air_pressure(float* air_pressure);
 air_pressure| float* |单位为绝对大气压hPa，eg：1000.00hPa，绝对大气压范围260-1260hPa。
 *返回值*  | env_status_t    | [status](#_1)
 
-
-
-***

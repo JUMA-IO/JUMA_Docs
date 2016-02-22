@@ -24,7 +24,7 @@ Cannon是基于STM32平台和BlueNRG蓝牙芯片设计的高性能开发板，�
 - 加速度计/陀螺仪：LSM6DS3
 - 磁力计：LSM303AGR
 - 温湿度计：HTS221
-- 气压计：LPS25HB
+- 气压计：LPS25H(B)
 
 ####4. 其他
 - 3组I2C、4组SPI、3组UART、USB、TF卡槽等、按键、LED等；
