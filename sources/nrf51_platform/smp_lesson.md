@@ -74,7 +74,7 @@
 ***
 ##使用MotionSensor连接SMP
 MotionSensor APP将SMP上三轴的数据显示为波形，它的下载地址见：  
-[http://pan.baidu.com/s/1mgnfWV2](http://pan.baidu.com/s/1mgnfWV2)  
+[http://pan.baidu.com/s/1hqVQwMK](http://pan.baidu.com/s/1hqVQwMK)  
 
 在工程的bin目录下找到MotionSensor.apk，将其安装到Android手机。
 
