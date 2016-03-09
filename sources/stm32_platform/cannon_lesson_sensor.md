@@ -13,7 +13,7 @@ Cannon上板载了多个由意法半导体(ST)出品的传感器，包括加速�
 
 
 ***
-##编译和烧录嵌入式软件
+##编译和烧写嵌入式软件
 ####Step1. 打开样本工程：
 ```
 x:/Cannon/product/application/sensor_tag/mdk-arm/CAF.uvproj
@@ -23,7 +23,7 @@ x:/Cannon/product/application/sensor_tag/mdk-arm/CAF.uvproj
 ####Step2. 编译工程
 ![](./images/yiwI1p2.png)
 
-####Step3. 烧入软件
+####Step3. 烧写软件
 ![](./images/yatJwos.png)
 
 ***
@@ -36,6 +36,9 @@ x:/Cannon/tools/STSensor.apk
 ```
 
 将该文件传送到Android手机，直接安装便可。
+
+> 如果您不知道如果将APK安装至手机，请参阅[这篇文章](http://jingyan.baidu.com/article/eae07827eda2fa1fec548527.html)。
+
 
 第二种方式：如果您熟悉Android开发环境，可以使用“ST_SENSOR APP”的源码来安装。“ST_SENSOR”APP的源码位于：  
 [https://github.com/JUMA-IO/BLE_SensorTag_Android](https://github.com/JUMA-IO/BLE_SensorTag_Android)
@@ -65,5 +68,6 @@ x:/Cannon/product/application/sensor_tag/app.c
 ```
 
 代码量很少，已配有注释，非常方便阅读。  
+
 如果您对其中的BLE APIs和JSensor APIs有所疑问，请查阅相应的API说明：  
 [http://www.juma.io/doc/zh/embedded_api/guide/](http://www.juma.io/doc/zh/embedded_api/guide/)

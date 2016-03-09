@@ -13,7 +13,7 @@
 
 
 ***
-##编译和烧录嵌入式软件
+##编译和烧写嵌入式软件
 ####Step1. 打开样本工程：
 ```
 x:/Cannon/product/application/remote_control/mdk-arm/CAF.uvproj
@@ -23,7 +23,7 @@ x:/Cannon/product/application/remote_control/mdk-arm/CAF.uvproj
 ####Step2. 编译工程
 ![](./images/yiwI1p2.png)
 
-####Step3. 烧入软件
+####Step3. 烧写软件
 ![](./images/yatJwos.png)
 
 
@@ -44,6 +44,8 @@ x:/Cannon/product/application/remote_control/mdk-arm/CAF.uvproj
 如果使用Android手机，在SDK集成包里含有“JUMA BLE调试助手”，可以直接安装：
 
 ![](./images/jumaBleHelper.png)  
+
+> 如果您不知道如果将APK安装至手机，请参阅[这篇文章](http://jingyan.baidu.com/article/eae07827eda2fa1fec548527.html)。
 
 ####3.自行编译源码安装
 

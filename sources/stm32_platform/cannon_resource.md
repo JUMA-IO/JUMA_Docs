@@ -44,10 +44,6 @@ Cannon是基于STM32平台和BlueNRG蓝牙芯片设计的高性能开发板，�
 ##规格手册
 请下载：[Cannon.pdf](http://www.juma.io/spec/cannon.pdf)
 
-***
-##更多资料
-请访问：
-[http://www.juma.io/platform/cannon.html](http://www.juma.io/platform/cannon.html)
 
 
 
