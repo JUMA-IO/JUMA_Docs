@@ -10,7 +10,7 @@ SDK 为开源项目，本文涉及的代码参见：
 ##发送蓝牙数据
 ###1. 函数声明
 ```
-- (void)writeData:(NSData *)data type:(const unsigned char)typeCode;
+- (void)writeData:(NSData *)data type:(UInt8)typeCode;
 ```	
 
 ###2. 函数功能
@@ -21,7 +21,7 @@ SDK 为开源项目，本文涉及的代码参见：
 参数          | 类型                 | 说明
 :-----       | :--------           | :------ 
 *data*       | NSData *            | 要写入的数据
-*typeCode*   | const unsigned char | 要写入的数据的类型
+*typeCode*   | UInt8               | 要写入的数据的类型
 *返回值*      | void                | 无
 
 ####关于 *data* 参数
