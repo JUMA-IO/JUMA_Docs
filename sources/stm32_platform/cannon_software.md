@@ -157,8 +157,9 @@ void ble_device_on_disconnect(uint8_t reason)
 6. 管理员审核通过后，会合并(`merge`)您改动的代码；
 7. （此时，我们的`repo`和您的`repo`就一样了）
 
-> 关于`Fork + Pull Request`，这里有一篇[读物](http://www.worldhello.net/gotgithub/04-work-with-others/010-fork-and-pull.html)写的不错，您看了就明白了。
+> 关于`Fork + Pull Request`，这里有一篇[读物](http://www.worldhello.net/gotgithub/04-work-with-others/010-fork-and-pull.html)写的不错，您看了就明白了。  
 
+如果您提交代码，请严格按照`目录结构`中所约定的规范。比如您叫linus，准备提交一个i2c的驱动，则您的代码应放在`/system/drivers/linus/i2c/`文件夹下。比如您的组织是zuma，准备提交一个Fat文件系统，则您的代码应放在`/system/middlewares/zuma/FatFs`文件夹下。
 
 
 
