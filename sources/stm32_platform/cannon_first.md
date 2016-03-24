@@ -51,7 +51,7 @@ Cannon支持STLink和J-Link两大烧写器或调试器，如果您手上没有�
 我们也将Keil V5.14版本的安装包上传至网盘，方便您的下载，请访问：[http://pan.baidu.com/s/1jGTe0VO](http://pan.baidu.com/s/1jGTe0VO)
 
 > 1. 关于Keil的使用和配置，请参阅左侧`Cannon的开发环境`一篇。   
-> 2. 默认情况下，Keil为试用版本，编译的时候有代码大小的限制。
+> 2. 默认情况下，Keil为`试用版本`，编译代码的时候会有*32KB*的大小限制，大家可以百度相关经验解决这个问题哦。
 
 ***
 ##Cannon代码和例程
@@ -69,6 +69,7 @@ Github上Cannon的代码空间：[https://github.com/JUMA-IO/STM32_Platform](htt
 * product/application: Cannon的应用层例程；
 * system: Cannon的底层驱动、中间件、算法、任务调度、编程框架等；
 * tools: 移动端的调试工具；
+* documents: 包含了Cannon的电路图，以及一些板载芯片的手册；
 
 
 ###2. 保持更新
