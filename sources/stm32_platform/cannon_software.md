@@ -132,7 +132,7 @@ void ble_device_on_disconnect(uint8_t reason)
 10. Cannon重新开启蓝牙广播 -- ble_device_start_advertising；
 ```
 
-> 如果您对蓝牙不熟悉，建议先了解一下蓝牙基本概念，这里有一篇[读物](http://www.juma.io/doc/zh/basics/ble_first/)。需记住，收发蓝牙数据，需要先要建立连接，而建立连接，需要设备先开启广播。
+> 如果您对蓝牙不熟悉，建议先阅读*前一篇*了解蓝牙基本概念。需记住，收发蓝牙数据，需要先要建立连接，而建立连接，需要设备先开启广播。
 
 `echo`例程中用到了`系统`和`BLE从设备`两个软件模块的API，您可以分别点击API文档查看：
 

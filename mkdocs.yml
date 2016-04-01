@@ -59,6 +59,7 @@ pages:
     - 'Cannon的第一次': 'stm32_platform/cannon_first.md'
     - 'Cannon开发环境': 'stm32_platform/cannon_env.md'
     - 'Cannon编译下载': 'stm32_platform/cannon_burn.md'
+    - 'Cannon蓝牙入门': 'stm32_platform/cannon_bluetooth.md'
     - 'Cannon代码学习': 'stm32_platform/cannon_software.md'
     - 'Cannon例程: SensorTag': 'stm32_platform/cannon_lesson_sensor.md'
     - 'Cannon例程: 蓝牙LED': 'stm32_platform/cannon_lesson_led.md'

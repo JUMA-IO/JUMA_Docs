@@ -2,10 +2,11 @@
 
 ##板子简介
 Cannon是基于STM32平台和BlueNRG蓝牙芯片设计的高性能开发板，它的板载资源丰富、处理能力强大，并能够远距离传输蓝牙信号。  
-![](./images/cannon_intro.jpg)
+
+![](./images/cannon_poster.jpg)
 
 ***
-##硬件特性
+##板载资源
 ####1. 处理器：STM32F401  
 - ARM Cortex-M4，最高可达84MHz frequency；
 - 512KB Flash / 96KB SRAM；
@@ -30,15 +31,6 @@ Cannon是基于STM32平台和BlueNRG蓝牙芯片设计的高性能开发板，�
 - 3组I2C、4组SPI、3组UART、USB、TF卡槽等、按键、LED等；
 - 可选择的Cable天线和陶瓷天线；
 - 可选择的USB供电、电池组供电；
-
-
-***
-##软件特性
-- JUMA SDK；
-- 低功耗任务调度机制，支持32个任务调度；
-- 开放BLE API接口（嵌入式端/APP端）；
-- 传感器数据接口（嵌入式端/APP端）；
-- To Be Continued...；
 
 ***
 ##规格手册

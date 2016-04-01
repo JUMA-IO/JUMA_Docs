@@ -1,6 +1,11 @@
-本系列API用于描述低功耗蓝牙**主设备**(BLE Master)的操作和事件。  
-低功耗蓝牙协议规定：主设备可以监听从设备广播，主动发起连接。  
-一般手机、电脑等是主设备或主从一体设备，蓝牙智能手环、蓝牙音箱等是从设备。
+Mesh网络即”无线网格网络”，它是一种无线自组网技术。Mesh网络基于呈网状分布，可以让众多无线节点间的相互合作和协同，下图是一个典型的Mesh网络拓扑结构：
+
+![](./images/mesh.jpg)
+
+其中，黄点是节点，绿点是路由节点，红点是网关或者中控设备。通常对于无线传感器的应用来说，节点将采集到的数据发送出来，路由节点收到后，将数据传输到网关或者中控设备。
+
+我们用低功耗蓝牙技术实现了Mesh网络，改善了低功耗蓝牙传统*中心式组网*的不足，使得低功耗蓝牙网络的覆盖距离大大增加，并且该网络具有动态自组织、自配置、自维护等特点。
+
 
 API声明和数据结构说明见头文件：
 
@@ -14,7 +19,7 @@ API声明和数据结构说明见头文件：
 ***
 ## 数据结构
 ### API调用状态
-`mesh_status_t `表明了API的调用状态，它是一个`unit8`类型，在`imu_sensor.h`头文件中通过枚举预置了一些状态，摘取部分如下：
+`mesh_status_t `表明了API的调用状态，它是一个`unit8`类型，在`mesh.h`头文件中通过枚举预置了一些状态，摘取部分如下：
 
 宏定义    | 数值  | 说明
 :----- | :-------- | :------
@@ -22,9 +27,7 @@ mesh_ok | 0x00    | API调用成功
 mesh_failed | 0x01    | API调用失败
 
 
-> 1. 其他宏定义请参阅：[mesh.h](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/middlewares/juma/mesh/mesh.h)。  
-> 2. 本宏定义只适用于STM32平台。
-
+> 完整宏定义请参阅：[mesh.h](https://github.com/JUMA-IO/STM32_Platform/blob/master/system/middlewares/juma/mesh/mesh.h)。  
 
 
 
@@ -48,7 +51,7 @@ typedef struct _mesh_manuf_data_t{
 参数    | 数据类型   | 说明
 :----- | :-------- | :------
 len| uint8_t  |manufacturing data 总的数据长度(不包含len的1Byte)
-data_type| uint8_t|加入到广播数据中的数据类型(mesh用到的是AD_TYPE_MANUFACTURER_SPECIFIC_DATA)
+data_type| uint8_t|加入到广播数据中的数据类型(mesh用到的是`AD_TYPE_MANUFACTURER_SPECIFIC_DATA`)
 adv_info_number| uint16_t|mesh网络中消息的版本编号
 data| uint16_t|用户想要发送的数据
 
